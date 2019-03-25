@@ -96,23 +96,32 @@
 
 
 
-  <meta name="description" content="一个基于hexo的博客，记录一些文章">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ERLingER">
-<meta property="og:url" content="https://inote.wtodd.wang/index.html">
+  <meta name="description" content="–现在阅读的你，如果是个FE，相信你不是个纯切图仔。反之，如果是，该进阶了，老铁！ 前端的我们，已经不仅仅是做页面，写样式了，我们还需要会做相关的服务器部署。废话不多说，下面就从前端的角度来讲以下nginx的相关使用。  给我们的静态资源启一个web 服务 给我们的nodejs 的项目设置反向代理，80端口访问 给我们的接口做转发 设置跨域请求 配置https服务的请求接口  登录云服务器首先你得">
+<meta name="keywords" content="nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx,作为前端的你会多少？">
+<meta property="og:url" content="https://inote.wtodd.wang/2019/03/26/nginx-作为前端的你会多少？/index.html">
 <meta property="og:site_name" content="ERLingER">
-<meta property="og:description" content="一个基于hexo的博客，记录一些文章">
+<meta property="og:description" content="–现在阅读的你，如果是个FE，相信你不是个纯切图仔。反之，如果是，该进阶了，老铁！ 前端的我们，已经不仅仅是做页面，写样式了，我们还需要会做相关的服务器部署。废话不多说，下面就从前端的角度来讲以下nginx的相关使用。  给我们的静态资源启一个web 服务 给我们的nodejs 的项目设置反向代理，80端口访问 给我们的接口做转发 设置跨域请求 配置https服务的请求接口  登录云服务器首先你得">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/1.png">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/3.png">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/5.png">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/9.png">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/15.png">
+<meta property="og:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/16.png">
+<meta property="og:updated_time" content="2019-03-25T10:17:37.605Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ERLingER">
-<meta name="twitter:description" content="一个基于hexo的博客，记录一些文章">
+<meta name="twitter:title" content="nginx,作为前端的你会多少？">
+<meta name="twitter:description" content="–现在阅读的你，如果是个FE，相信你不是个纯切图仔。反之，如果是，该进阶了，老铁！ 前端的我们，已经不仅仅是做页面，写样式了，我们还需要会做相关的服务器部署。废话不多说，下面就从前端的角度来讲以下nginx的相关使用。  给我们的静态资源启一个web 服务 给我们的nodejs 的项目设置反向代理，80端口访问 给我们的接口做转发 设置跨域请求 配置https服务的请求接口  登录云服务器首先你得">
+<meta name="twitter:image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/nginx/1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://inote.wtodd.wang/">
+  <link rel="canonical" href="https://inote.wtodd.wang/2019/03/26/nginx-作为前端的你会多少？/">
 
 
 
@@ -122,7 +131,7 @@
   };
 </script>
 
-  <title>ERLingER</title>
+  <title>nginx,作为前端的你会多少？ | ERLingER</title>
   
 
 
@@ -170,8 +179,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,7 +221,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -343,9 +351,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -377,10 +385,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/26/nginx-作为前端的你会多少？/" class="post-title-link" itemprop="url">nginx,作为前端的你会多少？</a>
+          <h1 class="post-title" itemprop="name headline">nginx,作为前端的你会多少？
+
               
             
           </h1>
@@ -462,9 +468,7 @@
       
 
       
-        
-          
-            <p>–现在阅读的你，如果是个FE，相信你不是个纯切图仔。反之，如果是，该进阶了，老铁！</p>
+        <p>–现在阅读的你，如果是个FE，相信你不是个纯切图仔。反之，如果是，该进阶了，老铁！</p>
 <p>前端的我们，已经不仅仅是做页面，写样式了，我们还需要会做相关的服务器部署。废话不多说，下面就从前端的角度来讲以下nginx的相关使用。</p>
 <ul>
 <li>给我们的静态资源启一个web 服务</li>
@@ -503,8 +507,6 @@
 <h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>这里nginx 在前端的使用只是很少的一部分，比如做请求拦截、api版本控制等，但这一些应用也是受到前端处理范围的局限，使得我们运用的也不多，相信以后随着“大前端“的发展,我们会更多的使用nginx功能或类nginx 服务功能。</p>
 <p>欢迎品阅和指正!</p>
 
-          
-        
       
     </div>
 
@@ -525,307 +527,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://inote.wtodd.wang/2019/03/25/nginx/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="adouwt">
-      <meta itemprop="description" content="一个基于hexo的博客，记录一些文章">
-      <meta itemprop="image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/14810057988524092.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ERLingER">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/25/nginx/" class="post-title-link" itemprop="url">Unbenannt</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-03-25 09:33:41" itemprop="dateCreated datePublished" datetime="2019-03-25T09:33:41Z">2019-03-25</time>
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
           
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://inote.wtodd.wang/2019/03/01/aboutme/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="adouwt">
-      <meta itemprop="description" content="一个基于hexo的博客，记录一些文章">
-      <meta itemprop="image" content="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/14810057988524092.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ERLingER">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/01/aboutme/" class="post-title-link" itemprop="url">aboutme</a>
-              
+              <a href="/2019/03/25/nginx/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
             
-          </h1>
-        
+          </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
             
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-02-28 21:34:12" itemprop="dateCreated datePublished" datetime="2019-02-28T21:34:12Z">2019-02-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-03-01 04:49:00" itemprop="dateModified" datetime="2019-03-01T04:49:00Z">2019-03-01</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><img src="https://adouwt-1256285758.cos.ap-shanghai.myqcloud.com/14810057988524092.jpg" alt></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -835,14 +566,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -862,8 +594,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -985,6 +726,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#登录云服务器"><span class="nav-number">1.</span> <span class="nav-text">登录云服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装nginx-源码编译安装"><span class="nav-number">2.</span> <span class="nav-text">安装nginx (源码编译安装)</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、安装nginx-的相关依赖"><span class="nav-number">2.0.1.</span> <span class="nav-text">1、安装nginx 的相关依赖</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#解压："><span class="nav-number">2.0.2.</span> <span class="nav-text">解压：</span></a></li></ol></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#使用nginx"><span class="nav-number">3.</span> <span class="nav-text">使用nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、给我们的静态资源启一个web-服务"><span class="nav-number">3.1.</span> <span class="nav-text">1、给我们的静态资源启一个web 服务</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结："><span class="nav-number">4.</span> <span class="nav-text">总结：</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1115,6 +873,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
 
   
 
@@ -1125,6 +887,8 @@
   
   
 
+
+  
 
 
   
